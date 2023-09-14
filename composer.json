@@ -1,0 +1,45 @@
+{
+    "name": "joggapp/laravel-cascade-soft-deletes",
+    "description": "Cascading soft deletes for the Laravel PHP Framework",
+    "keywords": [
+        "laravel",
+        "package",
+        "jogg"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Luong",
+            "email": "daniel@jogg.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JoggApp\\LaravelCascadeSoftDeletes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JoggApp\\LaravelCascadeSoftDeletes\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.22"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.10",
+        "phpunit/phpunit": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JoggApp\\LaravelCascadeSoftDeletes\\CascadeSoftDeletesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
